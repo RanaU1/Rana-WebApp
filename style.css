@@ -27,6 +27,6 @@ h1 {
 }
 
 body > p {
-    background: cyan;
-    color: pink;
+    font-size: 20px;
+    font-weight: 700;
 }
