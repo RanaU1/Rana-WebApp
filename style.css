@@ -2,3 +2,19 @@ h1 {
     text-align: center;
     color:red;
 }
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* remove if you don't want sticky footer */
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+    letter-spacing: 1px;
+}
