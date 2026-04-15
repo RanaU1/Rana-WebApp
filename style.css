@@ -10,7 +10,7 @@
      cursor: pointer;
  } */
 
- #title {
+ .title {
      font-size: 3rem;
      font-weight: bold;
      color: #FF671F;
@@ -20,7 +20,7 @@
      text-align: center;
  }
 
- #title:hover {
+ .title:hover {
      transform: scale(1.1);
      color: #046A38;
  }

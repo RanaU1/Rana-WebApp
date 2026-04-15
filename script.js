@@ -1,13 +1,9 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const title = document.querySelector("#title");
+const titles = document.querySelectorAll(".title");
 
 let isAnimating = false;
 
-// 🎯 Reusable animation function
 function runAnimation(element) {
-    if (isAnimating) return;
-
-    isAnimating = true;
     let iteration = 0;
     const originalText = element.dataset.text;
 
@@ -22,17 +18,20 @@ function runAnimation(element) {
 
         if (iteration >= originalText.length) {
             clearInterval(interval);
-            isAnimating = false;
         }
 
         iteration += 1 / 3;
     }, 50);
 }
 
+// ▶ Run BOTH at the same time on load
 window.addEventListener("load", () => {
-    runAnimation(title);
+    titles.forEach(el => runAnimation(el));
 });
 
-title.addEventListener("mouseenter", () => {
-    runAnimation(title);
+// ▶ Hover effect for EACH independently
+titles.forEach(el => {
+    el.addEventListener("mouseenter", () => {
+        runAnimation(el);
+    });
 });
