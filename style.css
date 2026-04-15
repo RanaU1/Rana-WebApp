@@ -11,17 +11,23 @@ body {
 }
 
 .title {
+    /* display: inline-block; */
     font-size: 3rem;
     font-weight: bold;
     letter-spacing: 3px;
-    /* transition: 0.3s; */
     cursor: pointer;
-    text-align: center;
+    margin: 10px;
 }
 
 .title {
     transition: transform 0.3s ease,
         color .5s ease;
+}
+
+.title-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .title-one {
@@ -43,7 +49,6 @@ body {
 .title-two:hover {
     color: var(--title_color_1);
 }
-
 
 
 .footer {
