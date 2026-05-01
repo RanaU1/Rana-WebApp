@@ -1,75 +1,98 @@
-:root {
-    /* i make this color just for same as India Flag color */
-    --title_color_1: #FF9933;
-    --title_color_2: #138808;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
 
 body {
-    padding: 0;
-    margin: 0;
+  background: #0f172a;
+  color: white;
 }
 
-.title {
-    /* display: inline-block; */
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 3px;
-    cursor: pointer;
-    margin: 10px;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #020617;
+  position: sticky;
+  top: 0;
 }
 
-.title {
-    transition: transform 0.3s ease,
-        color .5s ease;
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
-.title-container {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+.navbar a {
+  color: white;
+  text-decoration: none;
 }
 
-.title-one {
-    color: var(--title_color_1);
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.title-two {
-    color: var(--title_color_2);
+.hero h1 {
+  font-size: 3rem;
+  color: #38bdf8;
 }
 
-.title:hover {
-    transform: scale(1.1);
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
 }
 
-.title-one:hover {
-    color: var(--title_color_2);
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.title-two:hover {
-    color: var(--title_color_1);
+/* COURSES */
+.course-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-
-.footer {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 800;
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.card {
+  background: #020617;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
-.footer p {
-    margin: 0;
-    letter-spacing: 1px;
+.card:hover {
+  transform: scale(1.05);
+  background: #1e293b;
 }
 
-body>p {
-    font-size: 20px;
-    font-weight: 700;
+.card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #22c55e;
+  border: none;
+}
+
+/* OFFLINE */
+.highlight {
+  color: #facc15;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
 }
