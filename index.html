@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rana Universe</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rana Universe | Backend Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-    <div class="title-container">
-        <h1 class="title title-one" data-text="Rana">Rana</h1>
-        <h1 class="title title-two" data-text="Universe">Universe</h1>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2>Rana Universe</h2>
+    <ul>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#offline">Offline</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1 id="typing"></h1>
+    <p>Backend Engineer | Python | Docker | System Design</p>
+    <button onclick="scrollToCourses()">Explore Courses</button>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I build scalable backend systems and APIs.  
+      Now I’m teaching developers how to build production-ready systems.
+    </p>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="courses">
+    <h2>My Courses</h2>
+
+    <div class="course-container">
+
+      <div class="card">
+        <h3>Backend Mastery</h3>
+        <p>Build real-world APIs using FastAPI & Django.</p>
+        <button>Coming Soon</button>
+      </div>
+
+      <div class="card">
+        <h3>Docker for Devs</h3>
+        <p>Learn containerization and deployment.</p>
+        <button>Coming Soon</button>
+      </div>
+
+      <div class="card">
+        <h3>System Design</h3>
+        <p>Learn how scalable systems are built.</p>
+        <button>Coming Soon</button>
+      </div>
+
     </div>
-    <p>I am a Backend API Developer.</p>
-    <p>Contact Me in Github or Mail Me</p>
-    <footer class="footer">
-        <p>© Rana Universe 🍌 ©</p>
-        <br>
-        <p>I Live in My Universe</p>
-    </footer>
 
-    <script src="./script.js"></script>
+    <p class="launch">🚀 Launching Soon — Join the waitlist!</p>
+  </section>
+
+  <!-- OFFLINE -->
+  <section id="offline" class="offline">
+    <h2>Offline Training</h2>
+    <p>
+      I’m launching offline mentorship & training programs.
+    </p>
+    <p class="highlight">
+      📍 Offline classes coming soon. Stay tuned.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: RanaUniverse 321@gmail.com</p>
+    <p>GitHub: github.com/RanaUniverse</p>
+<p>Telegram: t.me/RanaUniverse</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Rana Universe 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
