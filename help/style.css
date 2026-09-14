@@ -1,0 +1,23 @@
+.help-page {
+    min-height: 70vh;
+    padding: 60px 20px;
+    background: #0f172a;
+    color: white;
+}
+
+.help {
+    max-width: 900px;
+    margin: auto;
+}
+
+.help h1 {
+    color: #38bdf8;
+}
+
+.help-item {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #38bdf8;
+    border-radius: 8px;
+}
